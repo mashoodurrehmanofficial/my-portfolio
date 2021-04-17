@@ -1,0 +1,105 @@
+{% extends 'base.html' %}v
+{% block 'mainbody' %}
+
+
+
+<div class="row">
+    <div class="col s12 l9 m8">
+        <div class="row" style="padding:30px 40px">
+
+
+            {% for x in data %}
+            <a href="{{x.url}}" target="_blank">
+                <div class="col s12 l6 m6" style="padding:20px 40px">
+                    <div class="z-depth-1" style="height:340px">
+                        <img width="100%" height="240px"
+                            src="../../Media/{{x.thumbnail}}" alt="">
+                        <b><p style="text-align:center;font-size:25px">{{x.title}}</p></b>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col s12 l3 m4">
+        <div class="grey lighten-4 z-depth-2"
+            style="border-radius:30px;margin:10px 0px;padding:0px 10px">
+            <div style="display:flex;
+                flex-direction:row;justify-content:center">
+                <img
+                    class="circle materialboxed" src="{{ STATIC_URL }}/Static/images/pic.jpeg" 
+                    height="230"
+                    width="220"
+                    style="margin:10px 30px">
+            </div>
+
+            <h1 style="font-size:40px !important;margin:12px 0px;
+                font-weight:900">Skills</h1>
+            <ul>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> HTML</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> CSS</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span>
+                    Javascript</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> React
+                    js</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> Python</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> Django</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> MYSQL
+                    Database</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span> Web
+                    Scraping</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span>
+                    Selenium +
+                    BeautifulSoup</p>
+                <p class="z-depth-1" style="margin:8px 0px; border-radius:10px;
+                    padding:4px 10px"> <span class="green-text">•</span>
+                    Deployment</p>
+                <br>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock 'mainbody' %}
+{% block 'js' %}
+{% endblock 'js' %}
